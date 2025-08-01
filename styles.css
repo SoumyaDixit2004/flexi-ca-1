@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #3499db;
+    color: white;
+    padding: 1rem 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: #9b59b7;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+}
+
+.main {
+    width: 50%;
+    background: #2ecc71;
+    color: white;
+    min-height: 400px;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.article h3 {
+    font-size: 2.5rem;
+}
+
+.sidebar {
+    width: 25%;
+    margin-left: 25%;
+    min-height: 400px;
+}
+
+.extra {
+    background: #e67e32;
+    padding: 2rem;
+    color: white;
+    min-height: 200px;
+}
+
+.extra-content h4 {
+    font-size: 1.8rem;
+}
+
+.image-section {
+    background: #e74c3d;
+    padding: 2rem;
+    color: white;
+    min-height: 200px;
+}
+
+.image-content h4 {
+    font-size: 1.8rem;
+}
+
+.banner {
+    background: #f1c40f;
+    color: #333;
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    flex: 1;
+}
+
+.banner h3 {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-list {
+        gap: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .main {
+        width: 100%;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .article h3 {
+        font-size: 2rem;
+    }
+    
+    .banner h3 {
+        font-size: 2rem;
+    }
+} 
