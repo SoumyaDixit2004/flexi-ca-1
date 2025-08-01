@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Desktop Layout</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    .container {
-      display: grid;
-      grid-template-areas: 
-        "header menu"
-        "hero   hero"
-        "main   image"
-        "main   extra"
-        "banner banner";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      gap: 5px;
-      height: 100vh;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .box {
-      padding: 20px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    .header { grid-area: header; background: #111; }
-    .menu   { grid-area: menu; background: #555; }
-    .hero   { grid-area: hero; background: #777; }
-    .main   { grid-area: main; background: #000; }
-    .image  { grid-area: image; background: #ddd; color: #000; }
-    .extra  { grid-area: extra; background: #999; }
-    .banner { grid-area: banner; background: #ccc; color: #000; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Header</h1>
+            </div>
+        </header>
 
-  <div class="container">
-    <div class="box header">HEADER</div>
-    <div class="box menu">MENU</div>
-    <div class="box hero">HERO</div>
-    <div class="box main">MAIN</div>
-    <div class="box image">IMAGE</div>
-    <div class="box extra">EXTRA</div>
-    <div class="box banner">BANNER</div>
-  </div>
+        <section class="hero">
+            <h2>Hero</h2>
+        </section>
 
+        <div class="content-wrapper">
+            <main class="main">
+                <div class="main-content">
+                    <h3>Main</h3>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <section class="extra">
+                    <h4>Extra</h4>
+                </section>
+
+                <section class="image-section">
+                    <h4>Image</h4>
+                </section>
+            </aside>
+        </div>
+
+        <section class="banner">
+            <h3>Banner</h3>
+        </section>
+    </div>
 </body>
 </html>
